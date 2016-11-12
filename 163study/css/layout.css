@@ -1,0 +1,895 @@
+*{margin: 0; padding:0;}
+   .header{
+        height: 89px;
+        width: 958px;
+        margin:0 auto;
+        background-color:#ffffff; 
+        /*border:1px solid red;*/
+    }
+    body{
+     font:12px/1.5 "Arial","Hiragino Sans GB","Microsoft YaHei", \5fae\8f6f\96c5\9ed1, "Helvetica", "sans-serif";
+    }
+    .clearfix:after{
+    content:".";display: block; clear: both; height: 0; overflow: hidden; visibility: hidden;
+    }
+    .msg{
+        width: 100%;
+        background-color: #f3f3f3;
+    }
+    .msg-txt{
+        height: 36px;
+        line-height: 36px;
+
+    }
+    .msg-txt p{
+        margin-left: 100px;
+        color: green;
+
+    }
+
+    .msg-txt p span{
+        /*display: block;*/
+        float: right;
+        margin-right: 100px;
+        color: #000;
+    }
+    .msg-txt p span i{
+        display: block;
+        float: left;
+        width: 16px;
+        height: 16px;
+        background-image: url(../img/Sprites.png);
+        background-position: -120px 0;
+        background-repeat: no-repeat;
+        margin-top: 9px;
+        cursor: pointer;
+    }
+    .msg-txt a{
+        text-decoration: none;
+        color: #21a557;
+        font-size: 12px;
+    }
+
+    .header .logo{
+        float: left;
+        width: 265px;
+        height: 88px;
+        line-height: 89px;  /*与父级DIV高度一致,单行文本可居中*/
+        /*border:1px solid black;*/
+    }
+    strong{
+        color: #3a9e2a;
+        /*border: 1px solid red;*/
+    }
+    .logo-title{
+        font-size: 22px;
+        font-weight: inherit;
+        /*border:1px solid red;*/
+    }
+
+    .concern{
+        float: left;
+        margin-top: 36px;
+        border:2px dotted red;
+        outline: 2px dotted red;
+    }
+
+    .gz{
+        width: 54px;
+        height: 21px;
+        float: left;
+        color: #fff;
+        border-radius: 2px;
+        background: #21a456;
+        cursor:pointer;
+        margin-right:14px;
+        text-align: center;
+        line-height: 21px;
+    }
+    .fs{
+        float: left;
+    }
+    .gz:hover{
+    background-color: #2fb556;
+    }
+    .ygz {
+    width: 106px;
+    line-height: 21px;
+    float: left;
+    background-color: #f8f8f8;
+    color: #333;
+    text-indent: 10px;
+    border-radius: 2px;
+    box-sizing: border-box;
+    border: 1px solid #efefef;
+    margin-right: 10px;
+    display: none;
+}
+
+    .ygz span {
+    width: 10px;
+    height: 13px;
+    display: inline-block;
+    background-image: url(../img/Sprites.png);
+    background-repeat: no-repeat;
+    background-position: -77px 0;
+    margin-right: 3px;
+}
+
+    .ygz i {
+    margin: 0 1px 0 5px;
+    color: #ccc;
+    font-size: 10px;
+}
+
+    .ygz a {
+    display: inline;
+    text-align: center;
+    color: #999;
+}
+    #qxgz{
+    color: #21A557;
+    text-decoration: underline;
+    }
+
+    .search{
+        float:right;
+        width: 22px;
+        height: 24px;
+        background-image: url(../img/Sprites.png);
+        background-repeat: no-repeat;
+        background-position: -151px 0;
+        margin: 36px 0 0 30px;
+        cursor: pointer;
+        /*background: red;*/
+
+    }
+    .search:hover{
+        background-position: -151px -24px;
+    }
+
+    .header .category{
+        float:right;
+        margin-top: 36px;
+        bottom: 38px;
+        /*border:1px solid black;*/
+
+    }
+    .category li{
+        float: left;
+        list-style: none;
+        font: 15px;
+        margin-left: 55px;
+    }
+    .category a{
+        text-decoration: none;
+        font-size: 16px;
+        color: #6d6d6d;
+    }
+    .category a:hover{
+        color:#3a9e2a;
+    }
+
+    .banner {
+        position: relative;
+        height: 461px;
+        background-color: #ccc;
+        overflow: hidden;
+
+
+    }
+
+    .img-list{
+        position: relative;
+        width: 616px;
+
+    }
+
+    .img-box li{
+        position: absolute;
+        left: 0;
+        top: 0;
+/*        float: left;*/
+        list-style: none;
+
+
+    }
+    .point{
+        position: absolute;
+        bottom: 20px;
+        left: 655px;
+        z-index: 10;
+        /*margin: 0 auto;*/
+        border:2px dotted red;
+        outline: 2px dotted red;
+    }
+    .point i{
+        display: block;
+        float: left;
+        height: 10px;
+        width: 10px;
+        border-radius: 50%;
+        background: white;
+        margin-right: 10px;
+
+    }
+    i.active{
+        background: black;
+    }
+    .current{
+        z-index: 5;
+    }
+
+    .nav{
+        width: 900px;
+        height: 295px;
+        /*border:1px solid red;*/
+        margin: 0 auto;
+    }
+    .section1 {
+        float: left;
+        width: 33%;
+        /*border:1px solid green;*/
+        color: #333;
+
+    }
+    .section2 {
+        float: left;
+        width: 33%;
+        /*border:1px solid green;*/
+        color: #333;
+    }
+    .section3{
+        float: left;
+        width: 33.3%;
+        /*border:1px solid green;*/
+        color: #333;
+    }
+    .img1 {
+        background-image:url(../img/navimg1.png); 
+        background-repeat:no-repeat; 
+        float: left;
+        width: 80px;
+        height: 80px;
+        /*border:1px solid blue;*/
+        margin:68px 20px 0 0;
+    }
+    .img2 {
+        background-image:url(../img/navimg2.png); 
+        background-repeat:no-repeat;
+        float: left;
+        width: 80px;
+        height: 80px;
+        /*border:1px solid blue;*/
+        margin:68px 20px 0 0;
+    }
+    .img3 {
+        background-image:url(../img/navimg3.png); 
+        background-repeat:no-repeat;
+        float: left;
+        width: 80px;
+        height: 80px;
+        /*border:1px solid blue;*/
+        margin:68px 20px 0 0;
+        }
+    .summary {
+        float: left;
+        width: 195px;
+        margin-top: 61px;
+        }
+
+
+    .summary p{
+        font-size: 14px;
+        line-height: 24px;
+        margin: 20px 0 34px 0;
+        }
+
+    .summary span{
+        font-size: 14px;      
+        }
+
+    .summary h2{
+        font-size: 21px;
+        }
+
+    .summary a{
+        color:#39a030;
+        text-decoration: none;
+        }
+
+    .summary a:hover{
+        text-decoration: underline;
+        }
+
+
+    .img-scroll{
+        height: 219px;
+        /*background: pink;*/
+        position: relative;
+        overflow: hidden;
+        border: 2px dotted red;
+        outline: 2px dotted red;
+        
+    }
+    #img-scroll{
+        width: 3260px;
+        position: absolute;
+        z-index: 5;
+    }
+    .img-scroll li{
+        float: left;
+        list-style: none;
+        margin-right: 4px;
+    }
+
+    .content{
+        width: 969px;
+        margin:0 auto;
+        padding-top: 81px;
+        /*border: 1px solid red;*/
+    }
+
+    .left-content{
+        width: 740px;
+        float: left;
+        /*border: 1px solid green;*/
+    }
+
+    .right-list{
+        width: 225px;
+        float: right;
+        /*border: 1px solid green;*/
+    }
+
+
+
+
+    .courselist ,.pic{
+        box-sizing:border-box;
+        /*border:1px solid red;*/
+    }
+    .txt1,.txt2{
+        margin: 0 5px 0 0;
+        /*border: 1px solid green;*/
+
+    }
+    .txt1 h3{
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow:ellipsis;
+        /*border:1px solid blue;*/
+
+    }
+
+    .tabtags{
+        /*border: 1px solid red;*/
+        margin-bottom: 30px;
+    }
+
+
+    .tab2,.tab1{
+        float: left;
+        width: 200px;
+        height:50px;
+        text-align: center;
+        line-height: 50px; /*文本垂直居中*/
+        cursor: pointer;
+        border: 1px solid #ecebeb;  /*设置1像素的实线*/
+        border-top: 1px solid transparent;  /*上面的线条设置为透明*/
+        box-shadow: 1px 1px 0 #ecebeb;  /*设置1像素的水平偏移和垂直偏移，模糊半径为0*/   
+        color: #747474;
+        }
+
+    .tab1 h2, .tab2 h2{
+        width: 200px;
+        height: 50px;
+        border:2px dotted red;
+        outline: 2px dotted red;
+
+    }
+    .active-checked{
+        color: #fff;
+        background-color: #39a030;
+        box-shadow: none;
+    }
+
+    .courselist li{
+        float: left;
+        width: 224px;
+        height: 236px;
+        margin-right: 20px;
+        margin-bottom: 18px;
+        list-style: none;
+        box-shadow: 1px 1px 5px #f1f1f1;
+        border-top: 1px solid transparent;
+        position: relative;  /*作为隐藏层的参照物*/
+        /*border:1px solid blue;*/
+        cursor: pointer;
+    }
+    .courselist li:hover {
+        /*border: 1px solid #f1f1f1;   /*设置border后，元素会错位*/
+        outline: 1px solid #e4e4e4;
+        /*border:1px solid #f1f1f1;*/
+
+    }
+/*    .contenrlist li:hover .course-hover{
+    display: block;
+}*/
+
+    .courselist .coursediv{
+        margin:1px;
+    }
+    .courselist h3{
+        font-size: 12px;
+        color:#4e4e4e;
+        margin-bottom: 10px;
+        /*border:1px solid black;*/
+    }
+    .courselist span{
+        display: block;
+        font-size: 12px;
+        color: #b6b6b6;
+        margin-bottom: 10px;
+    }
+    .courselist .cost{
+        color:#ff4505;
+        /*font-weight: bold;*/
+    }
+
+    .courselist .span-1{
+        display: inline-block;
+/*        height: 18px;*/
+        border-radius: 2px;
+        font-size: 12px;
+        color: #ddd;
+        border:1px solid #ddd;
+
+    }
+    .span-1{
+        background-image: url(../img/Sprites.png);
+        background-repeat: no-repeat;
+        background-position: -152px -55px;
+    }
+    .span-1 i{
+        display: block;
+        font-style:normal;
+        color: #a6a6a6;
+        text-indent: 18px;
+        margin-right: 4px;
+    }
+
+    .course-hover{
+        width: 469px;
+        height: 255px;
+        box-sizing:border-box;
+        border:1px solid #ddd;
+        box-shadow: 2px 2px 2px #d4d4d4; /*设置向右偏移，向下偏移，模糊半径*/
+        position: absolute;
+        left:-19px;
+        top:-19px;
+        z-index: 9;
+        background: #fff;
+        display: none;
+
+
+    }
+    .course-hover-top{
+        margin-top: 19px;
+        margin-left:19px;
+        /*border:1px solid green;*/
+    }
+    .course-hover-top img{
+        display: block;
+        float: left;
+        width: 223px;
+        margin-right: 19px;
+    }
+    .course-hover .course-hover-top h3{
+        display: block;
+        font-size: 18px;
+        color:#7d7d7d;
+        text-overflow:ellipsis;
+        overflow: hidden;
+        white-space: nowrap;
+        margin:0px 0px 20px 0px;
+
+    }
+    .course-hover-top dl{
+        height: 12px;
+        font-size: 12px;
+        color: #7b7b7b;
+    }
+    .course-hover .course-hover-top span{
+        display: inline-block; /*前面将span设置为块级元素*/
+        color: #7b7b7b;
+    }
+    .learnerCount{
+        background-image: url(../img/Sprites.png);
+        background-repeat: no-repeat;
+        background-position:-152px -55px;
+        text-indent: 18px;
+        /*border:1px solid red;*/
+    }
+    .course-hover-txt{
+        /*height: 47px;*/
+        height: 55px;
+        margin-top: 20px;
+        background: #f8f8f8;
+        padding:10px 30px 20px 10px;
+        /*line-height: 24px;*/
+        overflow: hidden;
+        /*border:1px solid red;*/
+    }
+    .course-hover-txt .description{
+        font-size: 14px;
+        line-height: 24px;
+        color: #7b7b7b;
+        margin: 0px 25px 0px 19px;
+
+        /*white-space: pre;*/
+        /*text-overflow:ellipsis;*/
+
+    }
+
+    .pagenum{
+        float: right;
+        /*border:1px solid red;*/
+        width: 302px;
+        margin-top: 29px;
+        margin-bottom: 120px;
+        text-align: center;
+        border:2px dotted red;
+        outline: 2px dotted red;
+
+    }
+    .cur-num{
+        color: #3c9e31;
+    }
+    .pageup,.pagedown{
+        float: left;
+        width: 30px;
+        height: 20px;
+        border-radius: 2px;
+        background: #9ed8b2;
+        text-align: center;
+        color:#fff;
+        font-weight: bold;
+    }
+    .pageup:hover,.pagedown:hover{
+    cursor: pointer;
+    }
+    .pageup{
+        margin-right: 18px;
+    }
+    .pagenum li{
+        float: left;
+        width: 20px;
+        height: 20px;
+        list-style: none;
+        margin-right: 8px;
+        cursor: pointer;
+    }
+    .pagenum li:hover{
+        /*display: block;*/
+        background: #9cd8b2;
+        color:#fff;
+        text-align: center;
+    }
+
+
+    .video-box,.hot{
+        box-shadow: 1px 1px 0 #ccc;
+        padding-bottom: 20px;
+        margin-bottom: 18px;
+        border: 1px solid #d4d4d4;
+        border-top: transparent;
+        box-shadow: 0 1px 0 #ecebeb;
+    }
+    .video{
+        position: relative;
+        /*border:1px solid blue;*/
+
+    }
+    .video i{
+        width: 50px;
+        height: 50px;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        cursor: pointer;
+        margin:-5px 0 0 -25px;
+        background-image: url(../img/Sprites.png);
+        background-repeat: no-repeat;
+        background-position: -63px -22px;
+        border:2px dotted red;
+        outline: 2px dotted red;
+
+    }
+    .right-content-title,.hot-title{
+        width: 223px;
+        height: 55px;
+        box-shadow: 1px 1px 0 #d4d4d4;
+
+    }
+    .right-content-title h2,.hot-title h2{
+        color:#333;
+        font-size: 16px;
+        font-weight: inherit;  /*从父元素继承字体的粗细*/
+        padding:20px 0 0 20px;
+
+    }
+    .video p{
+        padding:20px 0 9px 20px;
+    }
+    .video img{
+        display: block;
+        margin:0 auto;
+    }
+    .hotlist li{
+        list-style: none;
+        margin:20px 20px 0 20px;
+
+    }
+    .hotlist img{
+        display: block;
+        float: left;
+        margin-right: 12px;
+
+    }
+    .hotlist p{
+        font-size: 14px;
+        text-overflow:ellipsis;
+        overflow: hidden;
+        color: #000;
+        margin-bottom: 13px;
+
+
+    }
+    .hot{
+        border: 1px solid #ecebeb;
+        border-top: 1px solid transparent;
+        box-shadow: 0 1px 0 #ecebeb;    /*外阴影水平偏移为1，垂直为0，没有模糊半径，*/
+        padding-bottom: 20px;
+        border:2px dotted red;
+        outline: 2px dotted red;
+    }
+    .hotlist a{
+        text-decoration: none;
+    }
+    .hotlist p{
+        white-space: nowrap;
+        text-overflow:ellipsis;
+        overflow: hidden;
+    }
+    .hotlist span{
+        display: inline-block;  /*让文本可设置text-indent。背景图与文本不会重合*/
+        font-size: 9px;
+        color: #9a9494;
+        background-image: url(../img/Sprites.png);
+        background-repeat: no-repeat;
+        background-position: -152px -55px;
+        text-indent: 18px;
+/*        border: 1px solid red;*/
+    }
+
+    .footer{
+        height: 262px;
+        background: #2c3339;
+    }
+    .footer-left{
+        width: 394px;
+/*        padding-left: 212px;
+        padding-top: 92px;
+        padding-right: 150px;*/
+        margin-left: 212px;
+        margin-top: 92px;
+        margin-right: 150px;
+        /*border:1px solid blue;*/
+    }
+    .footer-left p{
+        font-size: 12px;
+        line-height: 2;
+
+    }
+    .footer p{
+        font-size: 12px;
+        color:#a9aeb2;
+    }
+    .footer-logo{
+        /*border: 1px solid red;*/
+
+    }
+    .footer-left,.footer-right{
+        float: left;
+        /*border: 1px solid red;*/
+    }
+    .footer-right{
+        height: 103px;
+        margin-top: 82px;
+        /*border:1px solid green;*/
+        
+    }
+    .footer-right .friendlink{
+        width: 209px;
+        height: 100px;
+        float: left;
+        font-size: 15px;
+    }
+    .footer-right .our{
+        width: 137px;
+        height:100px;
+        float: left;
+    }
+
+    .footer-right .more{
+        float: left;
+        font-size: 12px;
+    }
+    .footer-right p{
+        font-size: 15px;
+        line-height: 2;
+    }
+    .footer-right a{
+        text-decoration: none;
+        color:#a9aeb2;
+    }
+    .footer-right a:hover{
+        text-decoration: underline;
+    }
+    #friendlink,#our,#more{
+        font-size: 12px;
+    }
+    .weibo{
+        background-image: url(../img/Sprites.png);
+        background-repeat: no-repeat;
+        background-position: -119px -52px;
+        background-repeat:no-repeat;
+        width: 22px;
+        height: 22px;
+        display: inline-block;
+        margin-left: 8px;
+        vertical-align: sub;  /*图片与文字底部对齐*/
+
+    }
+
+    /*页面弹窗样式*/
+    /*使用固定定位防置弹出窗口*/
+    .mask{
+        position: fixed;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        background-color: rgba(0,0,0,0.7);
+        display: none;
+        z-index:999;
+    }
+    /*给两个弹出窗口设置定位（会重叠），且不可见*/
+    .loginwin,.videowin{
+        position: fixed;
+        left: 50%;
+        top:50%;
+    }
+    .loginwin{
+        width: 296px;
+        height: 208px;
+        margin:-144px 0 0 -195px;
+        background-color: #fff;
+        padding:40px 53px 40px 40px;
+
+    }
+    .loginwin h2{
+        color: #444;
+        font-size: 18px;
+        font-weight:inherit; 
+
+    }
+    .loginwin form div{
+    width: 293px;
+    height: 45px;
+    border: 1px solid #dfdfdf;
+    box-sizing: border-box;
+    background-color: #fafafa;
+    margin-bottom: 15px;
+    border: inset 1px solid #f1f1f1;
+    /*vertical-align: middle;*/
+    }
+    /*将label转为内联元素，设置宽，并用indent来代替padding*/
+    .loginwin label{
+    display: inline-block;/*label为行内元素*/
+    width: 42px;
+    text-indent: 10px;
+    color: #ccc;
+    font-size: 15px;
+    text-align: center;
+    /*vertical-align: middle;*/
+    /*border: 1px solid red;*/
+    }
+    .loginwin input{
+        width: 230px;
+        font-size: 14px;
+        color: #666;
+        text-indent: 4px;
+        background-color: #fafafa;
+        border: none; /*去掉input自带边框*/
+        line-height: 41px;  /*可让文本居中*/
+        outline: 0;  /*光标进入input，没有自带蓝色边框*/
+        /*border: 1px solid red;*/
+    }
+
+    .loginwin .submit{
+        border:none;
+        box-shadow: 2px 2px 2px #d5e3da;
+
+    }
+    .loginwin #submit{
+        width: 293px;
+        height: 45px;
+        color: #fff;
+        font-size: 16px;
+        background-image: url(../img/Sprites.png);
+        /*background-repeat: no-repeat;*/
+        background-position: -3px -180px;        
+    }
+    .user-name .password{
+        /*vertical-align: middle;*/
+    }
+    .loginwin p{
+        font-size: 12px;
+        color: #ff0000;
+    }
+    .winoff{
+        position: absolute;
+        width: 20px;
+        height: 20px;
+        top: 4px;
+        right: 4px;
+        background-image: url(../img/Sprites.png);
+        background-repeat: no-repeat;
+        background-position: -117px -20px;
+        cursor: pointer;
+/*        border:2px dotted red;
+        outline: 2px dotted red;*/
+
+    }
+/*video弹出窗口样式*/
+
+    .videowin{
+        /*display: none;*/
+        margin:-280px 0 0 -454px;
+        padding: 20px 20px 30px 20px;
+        background-color: #fff;
+
+    }
+/*video弹窗关闭按钮*/
+    .off-win{
+        position: absolute;
+        top: 30px;
+        right: 4px;
+        width: 20px;
+        height: 20px;
+        background-image: url(../img/Sprites.png);
+        background-repeat: no-repeat;
+        background-position: -117px -20px;
+        cursor: pointer;
+        border:2px dotted red;
+        outline: 2px dotted red;
+    }
+    video{
+        width: 887px;
+    }
+    .videowin h2{
+        color:#444;
+        font-size: 18px;
+        font-weight: inherit;
+        margin-bottom: 15px;
+    }
+
+
+/*屏幕自适应，min-width为大于等于*/
+@media screen and (min-width: 1206px){
+    .left-content{width:986px;}
+    .content{width: 1215px;}
+    .footer_left{margin-left: 50px; border: 1px solid green;}
+}

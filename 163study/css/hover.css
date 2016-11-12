@@ -1,0 +1,6 @@
+.gz:hover{
+	background-color: #2fb556;
+}
+.pageup:hover,.pagedown:hover{
+	cursor: pointer;
+}
